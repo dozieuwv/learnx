@@ -1,0 +1,344 @@
+.dashboardfist{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 13px;
+}
+
+.dashboardsec{
+    padding: 0px 13px;
+    grid-column: span 6;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: auto; */
+    row-gap: 15px;
+
+    /* grid-column-start: 1;
+  grid-column-end: 7; */
+    /* background-color: #FF7B00; */
+    /* display: flex; */
+}
+
+.calenderdiv{
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 52px;
+
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;row */
+    row-gap: 50px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    /* width: 300px; */
+
+
+}
+
+.dashboardthird{
+    /* display: grid; */
+    border: 1px solid blue; 
+    /* width: 100vh; */
+    /* background-color: blue; */
+}
+
+.dashcard{
+    width: 150px;
+    height: 100.48px;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    row-gap: 20px;
+    border-radius: 5px;
+}
+
+.calle {
+    /* width: 270px; */
+    /* display: flex; */
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dashcarddiv{
+    display: flex;
+    gap: 10px;
+}
+
+.dashp1{
+    display: flex;
+    gap: 3px;
+    align-content: center;
+}
+
+.dashcarddiv2{
+    /* display: flex; */
+}
+
+.dashcarddiv h4{
+    color:  #FF7B00;
+    ;
+}
+
+.dashcard1{
+    width: 150px;
+    height: 100.48px;
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    row-gap: 10px;
+
+}
+
+.meantorptag{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dashboardflex{
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* border: 1px solid red; */
+    gap: 6px;
+    justify-content: space-between;
+}
+
+.meantorptag p{
+    /* color: #FF7B00; */
+}
+
+.dashcarddiv22{
+    display: flex;
+    gap: 50px;
+}
+
+.ppp{
+    color: #FF7B00;
+}
+
+.dashcard2{
+    width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100.48px;
+    /* border: 1px solid black; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    row-gap: 10px;
+    
+}
+
+.dashcarddiv23{
+    display: flex;
+    gap: 10px;
+
+}
+
+.certimg{
+    height: 15px;
+    width: 120px;
+    margin-top:13px ;
+}
+
+.certimg2{
+    /* background-color:  #87ACFD; */
+    /* color: #87ACFD; */
+}
+
+.communitydiv{
+    /* width: 602px; */
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* height: 130px; */
+    /* margin-top: 25px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    row-gap: 25px;
+    border-radius: 10px;
+    padding: 15px 0;
+    /* padding: 10px 0px; */
+    
+    
+}
+
+.communitybut{
+    height: 30px;
+    width: 120px;
+    border: 1px solid #FF7B00;
+    color: #FF7B00;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.dashcourse{
+    display: grid;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+
+    /* align-content: center; */
+    /* justify-content: center; */
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.courz_container{
+    grid-column: span 1;
+}
+
+.dashcourse2{
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dashcourse3{
+    display: flex;
+    /* align-content: center; */
+    /* align-self: center; */
+    border: 1px solid black;
+    gap: 100px;
+}
+
+
+.dashcourse4 ul{
+    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: disc;
+
+    
+}
+
+.dashcourse4 li{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  color: black;
+  list-style: disc;
+  font-size: small;
+
+
+}
+
+.dashcourse5 ul{
+    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: disc;
+
+}
+
+
+.dashcourse5 li{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  color: black;
+  list-style: disc;
+
+    
+}
+
+.dashtopic{
+    /* border: 1px solid black; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* padding-bottom: 40px; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    row-gap: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    grid-column: span 1;
+
+}
+
+.dashtopic2{
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.linktopic{
+    text-decoration: none;
+    display: flex;
+    color: #FF7B00;
+    align-items: center;
+}
+
+
+
+
+.dateandt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+.dateandt h5{
+    font-size: medium;
+}
+
+.taskdead{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.subtask{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.subtask2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+   
+    
+}
+.subtask2 input{
+    height: 100%;
+    width: 230px;
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid #596275;
+    padding-left: 9px;
+}
+.subtask2 button{
+    padding: 0px 20px;
+    background-color: #FF7B00;
+    border-style: none;
+    outline: none;
+    color: white;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px ;
+    border: 1px solid #FF7B00;
+}
+

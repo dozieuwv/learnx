@@ -1,0 +1,19 @@
+/* Change selected date background color */
+.react-calendar .highlight-date {
+    background-color: #ff7f27 !important;
+    color: white !important;
+    border-radius: 50%; /* Make it circular */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensure text is visible */
+  .react-calendar .highlight-date abbr {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  

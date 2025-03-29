@@ -1,0 +1,68 @@
+.mentors-container {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+  }
+  
+  .mentors-container h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Mentors Grid */
+  .mentors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Mentor Card */
+  .mentor-card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .mentor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Mentor Image */
+  .mentor-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Mentor Info */
+  .mentor-info {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .mentor-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Call Link */
+  .call-link {
+    display: flex;
+    align-items: center;
+    color: #f18326;
+    font-weight: bold;
+    margin-top: 8px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .call-icon {
+    margin-left: 5px;
+    font-size: 14px;
+  }

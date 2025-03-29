@@ -4,11 +4,12 @@ import { useState } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { login } from "../redux/slice/authSlice";
+import "../styles/Payment.css"
 
-const SignIn = () => {
+const Payment = () => {
   const [inputs, setInputs] = useState({
     email: "",
-    password: "",
+    amount: "",
   });
   const [errorMessage, setErrorMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,7 +29,7 @@ const SignIn = () => {
       event.preventDefault();
       console.log(inputs);
       const response = await axios.post(
-        "https://learnx-official-api.onrender.com/api/v1/user/signIn",
+        // "https://learnx-official-api.onrender.com/api/v1/user/signIn",
         inputs,
         {
           headers: {
@@ -56,13 +57,23 @@ const SignIn = () => {
     }
   };
 
+  const options = [
+    "Frontend",
+    "Backend",
+    "Product Design",
+    "Data Analysis",
+    "AI & Machine Learning",
+  ];
+
+
   return (
     <>
       <div className="auth_layout11111">
       <div className="signin">
         <div className="signin__header">
           <img src={learnxx} alt="" className="loginimg" />
-          <h4>Hello! Welcome back</h4>
+          <h4>LearnX Payment Plan</h4>
+          <p>Complete your enrollment, kindly make tuition <br />payment here</p>
         </div>
 
         <form action="" className="signin_form" onSubmit={handleSubmit}>
@@ -79,28 +90,35 @@ const SignIn = () => {
             />
           </div>
 
-          <div className="input1">
-            <label htmlFor="">Password</label>
-            <input
-              name="password"
-              type="password"
-              placeholder=" enter password"
-              className="inputlogin"
-              value={inputs.password}
-              onChange={handleChange}
-            />
+          <div className="divinfoinput">
+            <select
+              className="p-2 border border-gray-300 rounded-lg"
+            //   value={selectedOption}
+            //   onChange={(e) => setSelectedOption(e.target.value)}
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              {options.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
           </div>
 
-          <div className="checkbox">
-            <div className="checkbox1">
-              <input type="checkbox" />
-              <label htmlFor="">Remember me</label>
-            </div>
-            <div>
-              <Link to="/" className="loginlink1">
-                Forgot password?
-              </Link>
-            </div>
+          
+
+          <div className="input1">
+            <label htmlFor="">payment amount</label>
+            <input
+              name="enter amount"
+              type="text"
+              placeholder=" enter Email"
+              className="inputlogin"
+              value={inputs.amount}
+              onChange={handleChange}
+            />
           </div>
 
           <div className="inputdiv">
@@ -123,4 +141,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Payment;

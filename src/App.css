@@ -690,9 +690,10 @@
         flex-direction: column;
         justify-content: center;
         background-image:url(/src/assets/signup.png) ;
-        /* height: 100vh; */
+        height: 100vh;
         width: 100vw;
         background-size: cover;
+        overflow-y: auto;
       }
 
 
@@ -871,7 +872,7 @@
       }
 
       .course-links-container {
-  border: 1px solid rgb(247, 89, 32); /* Outer border for all links */
+  border: 1px solid #FF7B00; /* Outer border for all links */
   border-radius: 8px;
   padding: 12px;
   display: flex; 
