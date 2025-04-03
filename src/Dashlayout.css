@@ -1,0 +1,262 @@
+.dashlayout_container{
+    display: flex;
+    /* width: 100vw; */
+    height: 100vh;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    
+}
+.Sidebar1{
+    background-color: #133A25;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    /* flex: 2; */
+    /* border-right: 1px solid black; */
+    width: 270px;
+    height: 100vh;
+    padding: 4px 10px;
+    left: 0;
+    top: 0;
+}
+
+
+.Top1a{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+
+}
+
+.topimg{
+    /* width: 50px; */
+    height: 20px;
+}
+
+.TOP1{
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+}
+
+.Top1b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    /* padding-top: 20px; */
+    /* gap: 10px; */
+    /* line-height: 0.3px; */
+    /* border: 1px solid greenyellow; */
+}
+
+.Top1b p{
+    color: white;
+}
+
+.imgtopb{
+    /* width: 20px; */
+    height: 30px;
+}
+
+.Top1c input{
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 30px;
+}
+
+.Top1c{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.searchimg{
+    position: absolute;
+    left: 10px;
+
+    top: 10px;
+}
+
+.Middle1{
+    /* background-color:pink; */
+    /* flex: 8; */
+    padding: 15px;
+    /* height: 100vh; */
+  }
+  
+  
+  .Middle1 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .Middle1 li{
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+    cursor: pointer;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    /* column-gap: 5px; */
+    color: white;
+    
+  
+    /* &:hover{
+        background-color:#F5772F14;
+        color: #FF7B00;
+        border-left: 3px solid #FF7B00;
+        border-radius: 5px;
+        width: 150px;
+    } */
+  }
+  
+  .Middle1 li .linkTag {
+    display: flex;
+  align-items: center;
+  column-gap: 8px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  
+    /* display: flex;
+    align-items: center;
+    column-gap: 5px;
+    text-decoration: none;
+    color: white;
+  
+    &:hover{
+      background-color:#F5772F14;
+      color: #FF7B00;
+      
+      width: 150px;
+  
+  } */
+  }
+  /* Selected (Active) Link */
+  .Middle1 li .linkTag.selected {
+    background-color: #F5772F14;
+    color: #FF7B00;
+    border-left: 4px solid #FF7B00;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Hover Effects */
+  .Middle1 li .linkTag:hover {
+    background-color: #F5772F14;
+    color: #FF7B00;
+    border-left: 4px solid #FF7B00;
+    border-radius: 5px;
+  }
+  
+  .Bottom1 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Bottom1 li{
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  
+    &:hover{
+        background-color:#F5772F14;
+        color: #FF7B00;
+        border-left: 3px solid #FF7B00;
+        border-radius: 5px;
+        width: 150px;
+    }
+  }
+  
+  
+  .Bottom1 {
+    padding: 15px;}
+.maindash{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: green; */
+}
+
+
+
+.navinputdash{
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    padding: 15px ;
+    align-items: center;
+}
+
+.headerdash{
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 997;
+    
+
+    /* background-color: #FF7B00; */
+}
+
+.searchdash1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.notificationdash{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    column-gap: 10px;
+}
+
+
+.searchdash1 input{
+    width: 200px;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 30px;
+}
+
+
+.searchicon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+.modal-overlay {
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background: rgba(0, 0, 0, 0.3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1000; */
+  }
+  
+  /* Modal Container */
+  .payment-modal {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Header */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .close-icon {
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .payment-modal p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Styling */
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    /* align-items: center; */
+  }
+  
+  .payment-form label {
+    /* align-items: center; */
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  .payment-form input
+   {
+    width: 300px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .payment-form select {
+    appearance: none;
+    background: white;
+  }
+  
+  /* Button */
+  .pay-button {
+    /* position: absolute; */
+    /* right: 30px; */
+    /* bottom: 0px; */
+    background: #ff7a00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 200px;
+    transition: background 0.3s;
+    margin-left: 80px;
+  }
+  
+  .pay-button:hover {
+    background: #e66a00;
+  }
+
+.payment-form select{
+    width: 330px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}

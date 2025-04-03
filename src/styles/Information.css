@@ -1,0 +1,176 @@
+/* Form Container */
+.form-container {
+    position: relative;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: poppins;
+  }
+  
+  /* Logo */
+  .form-logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Header */
+  .form-header h2 {
+    font-size: 24px;
+    font-style: poppins;
+    margin-bottom: 5px;
+  }
+  
+  .form-header p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group */
+  .formgroup{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+
+  .formgroupfist{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formgroupfist input{
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  .formgroupfist label{
+    text-align: start;
+    font-style: poppins;
+
+  }
+
+  .formgroupsec{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+  }
+
+
+  .formgroupage{
+    display: flex;
+    gap: 20px;
+    
+    /* flex-direction: column; */
+  }
+
+
+
+
+  .formgroupage input{
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+
+  .formgroupgender{
+    /* display: flex; */
+    border: 1px solid black;
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 0px;
+    /* text-align: center; */
+  }
+
+  .genderoptions{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    /* gap: 5px; */
+    padding-left: 10px 10px;
+  }
+
+
+  .submitbtninfo{
+    background: #ff7b00;
+  color: white;
+  border: none;
+  padding: 10px  10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+  position: absolute;
+  right: 110px;
+  /* left: 90px; */
+  }
+
+#disss {
+  color: #ccc;
+  
+}
+#disss2 {
+  color: #ccc;
+  
+}
+  .gendercon{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+
+  .gendercon label{
+    text-align: start;
+  }
+
+
+  .groupagecon{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+
+  .groupagecon label{
+    text-align: start;
+  }
+
+
+  .divinfoinput{
+    display: flex;
+    padding: 30px;
+    padding-left: 75px;
+
+  }
+
+  .divinfoinput select{
+    height: 30px;
+    width: 250px;
+  }
+
+
+  .display_none{
+    display: none;
+  }
