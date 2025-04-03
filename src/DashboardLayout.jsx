@@ -10,7 +10,7 @@ import { MdOutlinePayment } from "react-icons/md";
 import { PiCertificateFill } from "react-icons/pi";
 import { LuPhoneCall } from "react-icons/lu";
 import { TbLogout2 } from "react-icons/tb";
-import "./DashLayout.css";
+import "./Dashlayout.css";
 import { IoIosNotifications } from "react-icons/io";
 import { IoMdPerson } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
