@@ -1,19 +1,16 @@
 // import React from "react";
+import "../styles/paymentsuccess.css"
 
 const PaymentSuccess = () => {
   return (
-    <div>
+    <div className="payment-container">
       <h2>Payment was successful! 🎉</h2>
       <p>Click the button below to return to the dashboard.</p>
-      <p>
-        <a
-          href="${FRONTEND_URL}"
-          style="display: inline-block; padding: 10px 15px; background-color: #4CAF50; 
-                  color: white; text-decoration: none; border-radius: 5px; font-weight: bold;"
-        >
+        <a href="#">
+      <button className="backbtns">
           Click here to return to the Homepage
+      </button>
         </a>
-      </p>
     </div>
   );
 };

@@ -18,6 +18,7 @@ import Courses from "./pages/Courses.jsx"
 import Mentors from "./pages/Mentors.jsx"
 import PaymentModal from "./pages/PaymentModal.jsx"
 import Certificate from "./pages/Certificate"
+import PaymentSuccess from "./pages/PaymentSuccess.jsx";
 
 
 function AppRoutes() {
@@ -43,6 +44,7 @@ function AppRoutes() {
         <Route path="/signup" element={<Register />} />
         <Route path="/complete-registration" element={<Information />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/payment-success" element={<PaymentSuccess />} />
 
       </Route>
 
