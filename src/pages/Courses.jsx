@@ -1,9 +1,33 @@
+import { useDispatch, useSelector } from "react-redux";
 import courseimg from "../assets/courseimg.png";
 import Group130 from "../assets/Group130.png";
 // import Coursesdash from "../styles/Coursesdash.css";
 import "../styles/Newcourse.css";
+import { useEffect } from "react";
+import { fetchCourse } from "../redux/slice/getCourseSlice";
+import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
+  const { isAuthenticated } = useSelector((state) => state.auth);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  
+  if(!isAuthenticated) {
+    navigate("/signin");
+  }
+  
+  useEffect(() => {
+    dispatch(fetchCourse()); // Fetching some API endpoint
+    console.log("Got here");
+    
+  }, []);
+  
+  const { data, loading, error } = useSelector((state) => state.getCourse);
+
+  console.log(data);
+  
+
   return (
     <>
       <div className="coursecontainer">
