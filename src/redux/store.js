@@ -4,6 +4,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { combineReducers } from "redux";
 import authReducer from "./slice/authSlice";
+import getCourseReducer from './slice/getCourseSlice'
 
 // Persist Config
 const persistConfig = {
@@ -15,6 +16,7 @@ const persistConfig = {
 // Combine Reducers
 const rootReducer = combineReducers({
   auth: persistReducer(persistConfig, authReducer),
+  getCourse: getCourseReducer
 });
 
 // Configure Store

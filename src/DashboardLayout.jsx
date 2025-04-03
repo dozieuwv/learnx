@@ -14,7 +14,8 @@ import "./Dashlayout.css";
 import { IoIosNotifications } from "react-icons/io";
 import { IoMdPerson } from "react-icons/io";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "./redux/slice/authSlice";
 
 
 const DashboardLayout = () => {
@@ -22,10 +23,15 @@ const DashboardLayout = () => {
   const { user, isAuthenticated } = useSelector((state) => state.auth);
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   
   if(!isAuthenticated) {
     navigate("/signin");
   }
+
+  const handleLogout = () => {
+    dispatch(logout());
+  };
   return (
     <div className="dashlayout_container">
       <aside className="Sidebar1">
@@ -94,7 +100,7 @@ const DashboardLayout = () => {
         </div>
         <div className="Bottom1">
           <ul>
-            <li>
+            <li onClick={handleLogout}>
               <TbLogout2 />
               logout
             </li>
