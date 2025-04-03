@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* overflow-x: hidden; */
+ 
   font-family: poppins;
 }
 
@@ -1083,6 +1083,9 @@ color: #555555;
 
 
 @media screen and (max-width: 768px){
+  *{
+    overflow-x: hidden;
+  }
   .Header ul{
     display: none;
   }

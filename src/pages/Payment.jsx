@@ -15,6 +15,8 @@ const Payment = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const token = useSelector((state) => state.auth.token);
+  const reference = "";  // Example reference
+localStorage.setItem("payment_reference", reference)  ;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
