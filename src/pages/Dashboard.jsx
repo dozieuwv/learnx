@@ -27,11 +27,15 @@ const Dashboard = () => {
   if(!isAuthenticated) {
     navigate("/signin");
   }
+
+  if (!user?.track) {
+    navigate("/complete-registration");
+  }
   return (
     <>
       <div className="dashboardfist">
         <div className="dashboardsec">
-          <h3>Hi, {user?.firstname} (PD)</h3>
+          <h3>Hi, {user?.firstname}</h3>
 
           <div className="dashboardflex">
             <div className="dashcard">

@@ -23,10 +23,18 @@
 
 .Top1a{
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0px 30px;
+    width: 100%;
+    /* gap: 20px; */
 
+}
+
+.Top1a button {
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 .topimg{
@@ -53,8 +61,16 @@
     /* border: 1px solid greenyellow; */
 }
 
+.Top1b h4{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
 .Top1b p{
     color: white;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .imgtopb{
@@ -87,7 +103,7 @@
 .Middle1{
     /* background-color:pink; */
     /* flex: 8; */
-    padding: 15px;
+    padding: 6px;
     /* height: 100vh; */
   }
   
@@ -102,7 +118,7 @@
   }
   
   .Middle1 li{
-    padding: 10px;
+    padding: 8px;
     /* border-bottom: 1px solid black; */
     cursor: pointer;
     font-size: large;
@@ -171,7 +187,7 @@
   }
   
   .Bottom1 li{
-    padding: 10px;
+    padding: 6px;
     /* border-bottom: 1px solid black; */
     cursor: pointer;
     color: white;
@@ -191,7 +207,8 @@
   
   
   .Bottom1 {
-    padding: 15px;}
+    padding: 15px;
+}
 .maindash{
     width: 100%;
     position: relative;
@@ -205,7 +222,7 @@
 .navinputdash{
     display: flex;
     justify-content: space-between;
-    height: 95px;
+    /* height: 25px; */
     padding: 15px ;
     align-items: center;
 }
@@ -253,7 +270,56 @@
     top: 10px;
 }
 
+/* Default sidebar behavior */
+.Sidebar1 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* For mobile screens only */
+  @media screen and (max-width: 768px) {
+    .Sidebar1 {
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+  
+    .Sidebar1.closed {
+      transform: translateX(-100%);
+    }
+  
+    .Sidebar1.open {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      background-color: transparent;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #133A25;
+      margin-left: 10px;
+    }
+  }
 
+.hamburger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  .hamburger.open {
+    transform: rotate(90deg);
+  }
+  
+  .hamburger.close {
+    transform: rotate(0deg);
+  }
 
 
 

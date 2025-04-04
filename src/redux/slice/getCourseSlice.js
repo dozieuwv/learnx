@@ -11,14 +11,13 @@ export const fetchCourse = createAsyncThunk("getCourse/fetchData", async ( ) => 
     const state = store.getState()
     const token = state.auth.token
     // const { token } = useSelector((state) => state.auth);
-    console.log(token);
+    // console.log(token);
     
     const response = await apiRequest(endpoint, "GET", null, token);
     return response; // If successful, return the data
   } catch (error) {
     // return rejectWithValue(error.message); // Handle errors properly
     console.log(error);
-    
   }
 });
 

@@ -19,6 +19,7 @@ import Mentors from "./pages/Mentors.jsx"
 import PaymentModal from "./pages/PaymentModal.jsx"
 import Certificate from "./pages/Certificate"
 import PaymentSuccess from "./pages/PaymentSuccess.jsx";
+// import CourseViewer from "./pages/CourseViewer.jsx";
 
 
 function AppRoutes() {
@@ -50,6 +51,7 @@ function AppRoutes() {
 
       <Route element={<DashboardLayout />}>
         <Route path="/dashboard" element={< Dashboard/>} />
+        {/* <Route path="/courses" element={<CourseViewer />} /> */}
         <Route path="/courses" element={<Courses />} />
         <Route path="/mentors" element={<Mentors />} />
         <Route path="/paymentModal" element={<PaymentModal />} />
